@@ -1,89 +1,121 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>The Ultimate Chinese Pop Culture Guide</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Hero-style header */
+        #header {
+            min-height: 60vh;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background: #f5f5f5;
+        }
+        #header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        #header p {
+            font-size: 1.4em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Card layout for sections */
+        .sections-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+            padding: 3em 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-card {
+            background: #fff;
+            padding: 2em;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .section-card h2 {
+            margin-bottom: 0.5em;
+        }
+        .section-card p {
+            color: #555;
+        }
+    </style>
 </head>
-<body class="is-preload">
+<body>
 
-    <!-- Header -->
-    <section id="header">
+<!-- Header -->
+<section id="header">
+    <header class="major">
+        <h1>The Ultimate Chinese Pop Culture Guide</h1>
+        <p>Exploring Trends, Stories, and Voices of Modern China</p>
+    </header>
+</section>
+
+<!-- Sections as cards -->
+<section class="sections-container">
+    <div class="section-card">
+        <h2>网络热词</h2>
+        <p>Explore the latest trending words and phrases in Chinese internet culture.</p>
+    </div>
+    <div class="section-card">
+        <h2>流行音乐</h2>
+        <p>Discover the newest hits, artists, and music trends in China.</p>
+    </div>
+    <div class="section-card">
+        <h2>影视综艺</h2>
+        <p>Check out popular TV shows, movies, and variety programs loved by young people.</p>
+    </div>
+    <div class="section-card">
+        <h2>社会议题</h2>
+        <p>Learn about social issues and conversations shaping modern Chinese society.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
         <header class="major">
-            <h1>The Ultimate Chinese Pop Culture Guide</h1>
-            <p>Exploring Trends, Stories, and Voices of Modern China</p>
+            <h2>Get in touch</h2>
         </header>
-
-        <!-- Navigation Menu (styled to match template) -->
-        <nav id="menu">
-            <ul class="actions stacked">
-                <li><a href="index.html" class="button primary fit">Home</a></li>
-                <li><a href="slang.html" class="button fit">Internet Slang</a></li>
-                <li><a href="music.html" class="button fit">Pop Music</a></li>
-                <li><a href="tv.html" class="button fit">TV & Variety Shows</a></li>
-                <li><a href="society.html" class="button fit">Social Issues</a></li>
-                <li><a href="portfolio.html" class="button fit">Writing Portfolio</a></li>
-            </ul>
-        </nav>
-    </section>
-
-    <!-- Main Intro Section -->
-    <section id="one" class="main special">
-        <div class="container">
-            <span class="image fit primary"><img src="images/pic01.jpg" alt="Chinese pop culture" /></span>
-            <div class="content">
-                <header class="major">
-                    <h2>Who I am</h2>
-                </header>
-                <p>Hi! I’m Ziqing (Esther), a Chinese high school student living in New York. I’m passionate about Chinese pop culture and love exploring internet slang, music, TV shows, fashion, and social issues. Through this website, I aim to share the vibrant and dynamic culture of young people in China today and build a bridge between American and Chinese pop culture. Welcome to discover the charm of Chinese pop culture with me!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer">
-        <div class="container">
-            <header class="major">
-                <h2>Get in touch</h2>
-            </header>
-            <form method="post" action="#">
-                <div class="row gtr-uniform">
-                    <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                    <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                    <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                    <div class="col-12">
-                        <ul class="actions special">
-                            <li><input type="submit" value="Send Message" class="primary" /></li>
-                        </ul>
-                    </div>
+        <form method="post" action="#">
+            <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall"><input type="text" name="name" placeholder="Name" /></div>
+                <div class="col-6 col-12-xsmall"><input type="email" name="email" placeholder="Email" /></div>
+                <div class="col-12"><textarea name="message" placeholder="Message" rows="4"></textarea></div>
+                <div class="col-12">
+                    <ul class="actions special">
+                        <li><input type="submit" value="Send Message" class="primary" /></li>
+                    </ul>
                 </div>
-            </form>
-        </div>
-        <footer>
-            <ul class="icons">
-                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-                <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                <li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-            </ul>
-        </footer>
-    </section>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <ul class="icons">
+            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+</section>
 
 </body>
 </html>
