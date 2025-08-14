@@ -6,169 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Header styling */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
         body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff7f50, #ffb347);
+            color: #fff;
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            padding: 0;
         }
 
-        #header {
-            min-height: 60vh;
-            padding: 4em 2em 2em 2em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        header {
             text-align: center;
-            background: linear-gradient(135deg, #FFB347, #FFCC33);
-            color: #fff;
+            padding: 3em 1em 2em 1em;
         }
 
-        #header h1 {
-            font-family: 'Montserrat', sans-serif;
+        header h1 {
             font-size: 3em;
-            margin-bottom: 0.3em;
-            color: #FF6F00; /* bright orange */
+            color: #ff6600;
+            margin: 0;
         }
 
-        #header hr {
-            width: 80px;
-            height: 3px;
-            background: #FF6F00;
-            border: none;
-            margin: 0.5em auto 1em auto;
+        header hr {
+            width: 60px;
+            border: 2px solid #fff;
+            margin: 1em auto;
         }
 
-        #header p.subtitle {
+        header h2 {
             font-size: 1.5em;
-            max-width: 800px;
-            margin: 0 auto 1.5em auto;
+            margin-top: 0.5em;
+            font-weight: normal;
         }
 
-        #header p.intro {
-            font-family: 'Roboto', sans-serif;
+        .intro {
+            font-family: 'Georgia', serif;
             font-size: 1.1em;
-            max-width: 700px;
-            margin: 2em auto 0 auto;
-            line-height: 1.7;
-            color: #fff;
-            text-transform: none;
+            text-align: center;
+            max-width: 800px;
+            margin: 1.5em auto;
         }
 
-        /* Sections in one row */
+        .intro-image {
+            display: block;
+            margin: 2em auto 0 auto;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(255,111,0,0.2);
+        }
+
         .sections-container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 2em;
-            padding: 4em 2em;
-            max-width: 1400px;
-            margin: 0 auto;
+            max-width: 1200px;
+            margin: 3em auto;
+            gap: 1.5em;
         }
 
         .section-card {
-            background: #FFF5E6; /* light orange */
-            padding: 2em;
+            background: rgba(255, 140, 0, 0.85);
+            padding: 2em 1em;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(255,111,0,0.2);
             text-align: center;
-            flex: 1 1 200px;
+            width: 200px;
             transition: transform 0.3s, box-shadow 0.3s;
-            max-width: 220px;
+            text-decoration: none;
+            color: #fff;
         }
 
         .section-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(255,111,0,0.3);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
         }
 
         .section-card h2 {
-            margin-bottom: 0.7em;
-            color: #FF6F00;
+            margin-top: 0;
+            margin-bottom: 0.5em;
         }
 
         .section-card p {
-            color: #FF8C42;
+            font-size: 0.95em;
         }
 
-        /* Footer styling */
-        #footer {
-            background: #FFB347;
-            color: #fff;
-            padding: 3em 2em;
+        footer {
             text-align: center;
+            padding: 3em 1em;
+            background: rgba(255,111,0,0.9);
         }
 
-        #footer a {
-            color: #FF6F00;
-        }
-
-        #footer .icons a {
+        footer a {
             color: #fff;
-            margin: 0 0.5em;
-            font-size: 1.3em;
+            text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
 
-<!-- Header -->
-<section id="header">
-    <header class="major">
+    <header>
         <h1>The Ultimate Chinese Pop Culture Guide</h1>
         <hr>
-        <p class="subtitle">Exploring Trends, Stories, and Voices of Modern China</p>
-        <p class="intro">Hi! I’m Ziqing (Esther), a Chinese high school student living in New York. I’m passionate about Chinese pop culture and love exploring internet slang, music, TV shows, fashion, and social issues. Through this website, I aim to share the vibrant and dynamic culture of young people in China today and build a bridge between American and Chinese pop culture. Welcome to discover the charm of Chinese pop culture with me!</p>
+        <h2>Exploring Trends, Stories, and Voices of Modern China</h2>
     </header>
-</section>
 
-<!-- Sections as cards -->
-<section class="sections-container">
-    <div class="section-card">
-        <h2>Network Slang</h2>
-        <p>Explore the latest trending words and phrases in Chinese internet culture.</p>
-    </div>
-    <div class="section-card">
-        <h2>Pop Music</h2>
-        <p>Discover the newest hits, artists, and music trends in China.</p>
-    </div>
-    <div class="section-card">
-        <h2>TV Shows & Variety</h2>
-        <p>Check out popular TV shows, movies, and variety programs loved by young people.</p>
-    </div>
-    <div class="section-card">
-        <h2>Social Issues</h2>
-        <p>Learn about social issues and conversations shaping modern Chinese society.</p>
-    </div>
-    <div class="section-card">
-        <h2>Writing Portfolio</h2>
-        <p>Read my original articles and essays exploring Chinese pop culture and related topics.</p>
-    </div>
-</section>
+    <p class="intro">
+        Hi! I’m Ziqing (Esther), a Chinese high school student living in New York. I’m passionate about Chinese pop culture and love exploring internet slang, music, TV shows, fashion, and social issues. Through this website, I aim to share the vibrant and dynamic culture of young people in China today and build a bridge between American and Chinese pop culture. Welcome to discover the charm of Chinese pop culture with me!
+    </p>
 
-<!-- Footer -->
-<section id="footer">
-    <div class="container">
-        <header class="major">
-            <h2>Get in touch</h2>
-        </header>
-        <form method="post" action="#">
-            <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall"><input type="text" name="name" placeholder="Name" /></div>
-                <div class="col-6 col-12-xsmall"><input type="email" name="email" placeholder="Email" /></div>
-                <div class="col-12"><textarea name="message" placeholder="Message" rows="4"></textarea></div>
-                <div class="col-12">
-                    <ul class="actions special">
-                        <li><input type="submit" value="Send Message" class="primary" /></li>
-                    </ul>
-                </div>
-            </div>
-        </form>
-    </div>
-</section>
+    <img src="images/myphoto.jpg" alt="Ziqing Esther" class="intro-image">
+
+    <section class="sections-container">
+        <a href="network-slang.html" class="section-card">
+            <h2>Network Slang</h2>
+            <p>Explore the latest trending words and phrases in Chinese internet culture.</p>
+        </a>
+        <a href="pop-music.html" class="section-card">
+            <h2>Pop Music</h2>
+            <p>Discover the newest hits, artists, and music trends in China.</p>
+        </a>
+        <a href="tv-shows.html" class="section-card">
+            <h2>TV Shows & Variety</h2>
+            <p>Check out popular TV shows, movies, and variety programs loved by young people.</p>
+        </a>
+        <a href="social-issues.html" class="section-card">
+            <h2>Social Issues</h2>
+            <p>Learn about social issues and conversations shaping modern Chinese society.</p>
+        </a>
+        <a href="writing-portfolio.html" class="section-card">
+            <h2>Writing Portfolio</h2>
+            <p>Read my original articles and essays exploring Chinese pop culture and related topics.</p>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ziqing Esther | Design inspired by HTML5 UP</p>
+    </footer>
 
 </body>
 </html>
