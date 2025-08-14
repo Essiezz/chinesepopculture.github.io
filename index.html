@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         /* Header styling */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
         #header {
             min-height: 60vh;
             padding: 4em 2em 2em 2em;
@@ -17,68 +25,92 @@
             background: linear-gradient(135deg, #FFB347, #FFCC33);
             color: #fff;
         }
+
         #header h1 {
+            font-family: 'Montserrat', sans-serif;
             font-size: 3em;
-            margin-bottom: 0.5em;
-            font-weight: 700;
+            margin-bottom: 0.3em;
+            color: #FF6F00; /* bright orange */
         }
+
+        #header hr {
+            width: 80px;
+            height: 3px;
+            background: #FF6F00;
+            border: none;
+            margin: 0.5em auto 1em auto;
+        }
+
         #header p.subtitle {
             font-size: 1.5em;
             max-width: 800px;
             margin: 0 auto 1.5em auto;
         }
+
         #header p.intro {
-            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1em;
             max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-            color: #f9f9f9;
+            margin: 2em auto 0 auto;
+            line-height: 1.7;
+            color: #fff;
+            text-transform: none;
         }
 
-        /* Card layout for sections */
+        /* Sections in one row */
         .sections-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             gap: 2em;
             padding: 4em 2em;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
+
         .section-card {
-            background: #fff;
+            background: #FFF5E6; /* light orange */
             padding: 2em;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(255,111,0,0.2);
             text-align: center;
+            flex: 1 1 200px;
             transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 220px;
         }
+
         .section-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 12px 30px rgba(255,111,0,0.3);
         }
+
         .section-card h2 {
             margin-bottom: 0.7em;
-            color: #FF6F61;
+            color: #FF6F00;
         }
+
         .section-card p {
-            color: #555;
+            color: #FF8C42;
         }
 
         /* Footer styling */
         #footer {
-            background: #333;
-            color: #eee;
+            background: #FFB347;
+            color: #fff;
             padding: 3em 2em;
             text-align: center;
         }
+
         #footer a {
-            color: #FF6F61;
+            color: #FF6F00;
         }
+
         #footer .icons a {
             color: #fff;
             margin: 0 0.5em;
             font-size: 1.3em;
         }
+
     </style>
 </head>
 <body>
@@ -87,6 +119,7 @@
 <section id="header">
     <header class="major">
         <h1>The Ultimate Chinese Pop Culture Guide</h1>
+        <hr>
         <p class="subtitle">Exploring Trends, Stories, and Voices of Modern China</p>
         <p class="intro">Hi! I’m Ziqing (Esther), a Chinese high school student living in New York. I’m passionate about Chinese pop culture and love exploring internet slang, music, TV shows, fashion, and social issues. Through this website, I aim to share the vibrant and dynamic culture of young people in China today and build a bridge between American and Chinese pop culture. Welcome to discover the charm of Chinese pop culture with me!</p>
     </header>
@@ -135,17 +168,6 @@
             </div>
         </form>
     </div>
-    <footer>
-        <ul class="icons">
-            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands alt fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </footer>
 </section>
 
 </body>
